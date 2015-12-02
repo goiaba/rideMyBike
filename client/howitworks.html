@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>rideMyBike - Where you can ride by sharing</title>
+    <meta name="description" content="Web platform for sharing bicycles around the country">
+    <meta name="author" content="">
+    <!-- css styles... -->
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   
+
+</head>
+<body>
+   <div id="header" class="header"></div>
+    <main>
+        <div class="back-image">
+            <div class="search-area">
+                <h1>Find a bicycle to borrow</h1>
+                <!-- note input -->
+                <section class="search-form">
+                    <input id="autocomplete" type="search" placeholder="Location" required>
+                    <input type="text" id="startDate" required>
+                    <input type="text" id="endDate" required>
+                    <button>Search</button>
+                 
+                </section>
+            </div>
+        </div>
+        <!-- search results -->
+        <section id="search-results" class="grid">
+            <div id="loading"><img src="../assets/img/loading_spinner.gif" class="loading_circle" alt="loading" /></div>
+        </section>
+    </main>
+    <!-- document footer -->
+    <footer>
+        <nav class="footer-nav">
+            <a href="login.html">Login</a>
+            <strong>|&nbsp;&nbsp;</strong>
+            <a href="user-registration.html">Sign Up</a>
+            <strong>|&nbsp;&nbsp;</strong>
+            <a href="#">How it Works</a>
+            <strong>|&nbsp;&nbsp;</strong>
+            <a href="#">Twitter</a>
+        </nav>
+    </footer>
+<!-- Remove - Mockup script -->
+    <script type="text/javascript" src="assets/scripts/mockup.js"></script>
+    <!-- end of Remove - Mockup script -->
+
+    <!-- js scripts... -->
+    <script type="text/javascript" src="assets/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/rideMyBike.js"></script>
+    <script type="text/javascript" src="assets/scripts/googleMapsAPI.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?signed_in=true&libraries=places&callback=initAutocomplete" async
+            defer></script>
+</body>
+</html>
